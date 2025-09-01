@@ -1,0 +1,26 @@
+
+version: '3.8'
+
+services:
+  frameedge-ai:
+    build:
+      context: .
+      dockerfile: Dockerfile_byteedge
+    container_name: frameedge-smart-designer
+    ports:
+      - "8501:8501"
+    environment:
+      - GEMINI_API_KEY=${GEMINI_API_KEY}
+    volumes:
+      - ./data:/app/data
+      - ./uploads:/app/uploads
+      - ./heatmaps:/app/heatmaps
+      - ./models:/app/models
+      - ./logs:/app/logs
+    restart: unless-stopped
+    networks:
+      - frameedge-network
+
+networks:
+  frameedge-network:
+    driver: bridge
