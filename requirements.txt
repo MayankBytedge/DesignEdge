@@ -1,13 +1,13 @@
 
-streamlit==1.32.0
-google-generativeai==0.4.0
-python-dotenv==1.0.0
-plotly==5.17.0
-pandas==2.0.3
-numpy==1.24.3
-Pillow==10.0.0
-scikit-fem==6.0.0
-meshio==5.3.4
-matplotlib==3.7.2
-trimesh==3.23.5
-pypdf2==3.0.1
+streamlit
+google-generativeai
+python-dotenv
+plotly
+pandas
+numpy
+Pillow
+scikit-fem
+meshio
+matplotlib
+trimesh
+pypdf2
