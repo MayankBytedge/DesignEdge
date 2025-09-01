@@ -22,7 +22,7 @@ load_dotenv()
 
 # Page configuration
 st.set_page_config(
-    page_title="FramEdge AI - Smart Packaging Designer",
+    page_title="DesignEdge AI - Smart Packaging Designer",
     page_icon="📦",
     layout="wide",
     initial_sidebar_state="expanded"
@@ -798,7 +798,7 @@ def main():
     # Professional header with BytEdge branding
     st.markdown("""
     <div class="main-header">
-        <div class="frameedge-logo">FramEdge.AI</div>
+        <div class="frameedge-logo">DesignEdge.AI</div>
         <div class="company-subtitle">Smart Packaging Designer</div>
         <p style="font-size: 1.1rem; margin-top: 1rem;">Advanced Finite Element Analysis with Artificial Intelligence</p>
     </div>
@@ -1700,7 +1700,7 @@ def show_professional_spider_analysis(results, failed_tests):
 def show_frameedge_recommendations(failed_tests):
     """Professional FramEdge recommendations system"""
     st.markdown("---")
-    st.subheader("FramEdge Smart Recommendations")
+    st.subheader("DesignEdge Smart Recommendations")
 
     recommendations = generate_frameedge_recommendations(
         failed_tests, 
