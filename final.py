@@ -631,7 +631,7 @@ def create_plastic_threejs_viewer(viewer_type="model"):
                         packageModel.receiveShadow = true;
                         scene.add(packageModel);
                         
-                        #document.querySelector('.status').innerHTML = '<strong>Model</strong>';
+                        document.querySelector('.status').innerHTML = '<strong>3DModel</strong>';
                     }}
                 );
 
