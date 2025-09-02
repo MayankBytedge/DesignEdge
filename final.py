@@ -500,7 +500,7 @@ def create_plastic_threejs_viewer(viewer_type="model"):
     """Create Three.js viewer with direct packet.glb file path"""
     try:
         # Use direct file path to existing packet.glb
-        glb_path = "./packet.glb"  # Direct file path
+        glb_path = "packet.glb"  # Direct file path
         
         html_content = f"""
         <!DOCTYPE html>
