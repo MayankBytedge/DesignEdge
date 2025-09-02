@@ -974,7 +974,6 @@ def show_file_upload():
             st.markdown("""
             **3D Model Controls:**
             - **Material Type**: Cycle between translucent, matte, and glossy plastic
-            - **Transparency**: Toggle transparency effects for visualization
             - **Mouse Controls**: Left click + drag to rotate, scroll to zoom
             - **Reset View**: Return to default camera position
             """)
