@@ -539,7 +539,7 @@ def create_plastic_threejs_viewer(viewer_type="model"):
                 <button onclick="resetView()">Reset View</button>
             </div>
             <div class="status">
-                <strong>Status:</strong> Loading packet.glb model...
+                <strong>Status:</strong> 
             </div>
             <div id="viewer"></div>
 
@@ -617,7 +617,7 @@ def create_plastic_threejs_viewer(viewer_type="model"):
                         packageModel.position.sub(center.clone().multiplyScalar(scale));
                         scene.add(packageModel);
                         
-                        document.querySelector('.status').innerHTML = '<strong>Status:</strong> packet.glb loaded successfully';
+                        document.querySelector('.status').innerHTML = '<strong>Model</strong>';
                     }},
                     function(progress) {{
                         console.log('Loading progress:', progress);
@@ -631,7 +631,7 @@ def create_plastic_threejs_viewer(viewer_type="model"):
                         packageModel.receiveShadow = true;
                         scene.add(packageModel);
                         
-                        #document.querySelector('.status').innerHTML = '<strong>Status:</strong> Using fallback geometry (packet.glb not found)';
+                        #document.querySelector('.status').innerHTML = '<strong>Model</strong>';
                     }}
                 );
 
