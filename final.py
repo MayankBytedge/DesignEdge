@@ -499,7 +499,7 @@ def create_plastic_threejs_viewer(viewer_type="model"):
     """Create Three.js viewer with direct packet.glb file path"""
     try:
         # Use direct file path to existing packet.glb
-        glb_path = "./pack_mesh.glb"  # Direct file path
+        glb_path = "./packet.glb"  # Direct file path
         
         html_content = f"""
         <!DOCTYPE html>
@@ -631,7 +631,7 @@ def create_plastic_threejs_viewer(viewer_type="model"):
                         packageModel.receiveShadow = true;
                         scene.add(packageModel);
                         
-                        document.querySelector('.status').innerHTML = '<strong>Status:</strong> Using fallback geometry (packet.glb not found)';
+                        #document.querySelector('.status').innerHTML = '<strong>Status:</strong> Using fallback geometry (packet.glb not found)';
                     }}
                 );
 
