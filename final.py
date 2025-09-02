@@ -160,7 +160,8 @@ st.markdown("""
         box-shadow: 0 4px 15px rgba(102, 126, 234, 0.3);
     }
     .user-message {
-        background: linear-gradient(135deg, #f8f9ff 0%, #e8ecff 100%);
+        background: #0000;
+        color:#ffff;
         padding: 1.5rem;
         border-radius: 15px;
         margin: 1rem 0;
